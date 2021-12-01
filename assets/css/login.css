@@ -1,0 +1,104 @@
+/* 100E3B primary */
+/* F8C500 yellow */
+/* FA4400 orange */
+/* F2FBFF lightblue */
+
+
+/* LOGIN */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+}
+
+.container-form {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 28px;
+	color: #100E3B;
+	font-weight: 600;
+}
+
+.form {
+	padding: 80px;
+	background-color: #F2FBFF;
+	border: 1px solid #eaeaea;
+	border-radius: 12px;
+	margin: auto;
+	width: 300px;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+}
+
+form input {
+	width: 280px;
+	margin-top: 15px;
+	padding-left: 14px;
+	height: 44px;
+	border-radius: 12px;
+	font-size: 16px;
+	outline: 1px solid #100E3B;
+    border: none;
+	transition: all 1s ease-in;
+}
+form div{
+	display: flex;
+	flex-direction: column;
+}
+
+.btn-login {
+	color: #eaeaea;
+	cursor: pointer;
+	text-align: center;
+	font-size: 16px;
+	padding: 8px 14px;
+	background-color: #100E3B;
+	width: 190px;
+	border-radius: 12px;
+	margin-top: 40px;
+}
+
+.asked-for {
+	margin-top: 30px;
+}
+
+.create-account {
+	margin-top: 5px;
+}
+
+.asked-for a,
+.create-account a {
+	font-weight: 300;
+	color: rgb(73, 73, 247);
+	display: block;
+}
+.already{
+    font-weight: 300;
+    color: #100E3B;
+}
+.message{
+	text-align: left;
+	margin: 5px 0 0 5px;
+}
+.text-danger, .message-danger{
+	color: #FA4400;
+}
+.message-success{
+	color: #04774b;
+}
+/* AKHIR login */

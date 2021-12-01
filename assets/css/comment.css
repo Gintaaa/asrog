@@ -1,0 +1,77 @@
+/* 100E3B primary */
+/* F8C500 yellow */
+/* FA4400 orange */
+/* F2FBFF lightblue */
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	margin-top: 0;
+}
+
+form {
+	padding: 20px;
+	background-color: #F2FBFF;
+	border: 1px solid #eaeaea;
+	border-radius: 12px;
+	margin: 0px 30px 0px 30px;
+	width: 80%;
+}
+
+h1 {
+	color: #100E3B;
+}
+
+h3 {
+	color: #100E3B;
+}
+
+th {
+	color: #100E3B;	
+}
+
+input{
+	width: 200px;
+	margin-top: 15px;
+	padding-left: 14px;
+	height: 44px;
+	border-radius: 12px;
+	font-size: 16px;
+	outline: 1px solid #100E3B;
+    border: none;
+	transition: all 1s ease-in;
+}
+
+textarea {
+	width: 260px;
+	margin-top: 15px;
+	padding-left: 14px;
+	height: 100px;
+	border-radius: 12px;
+	font-size: 16px;
+	outline: 1px solid #100E3B;
+    border: none;
+	transition: all 1s ease-in;
+}
+
+.next {
+	color: #eaeaea;
+	cursor: pointer;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	padding: 8px 14px;
+	background-color: #100E3B;
+	width: 190px;
+	border-radius: 12px;
+	margin-top: 20px;
+}
+
+
+
+
+

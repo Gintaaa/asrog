@@ -1,0 +1,455 @@
+/* 100E3B primary */
+/* F8C500 yellow */
+/* FA4400 orange */
+/* F2FBFF lightblue */
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #F2FBFF;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.container-header {
+    padding: 0 32px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+h1 a{
+    font-size: 28px;
+    color: #FA4400;
+    font-weight: 600;
+    text-decoration: none;
+    user-select: none;
+}
+.app-bar .container .nav_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 400px;
+}
+.nav_menu .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+.menu-button button {
+    background-color: transparent;
+    border: none;
+    font-size: 34px;
+    color: #100E3B;
+    cursor: pointer;
+    transition: .7s ease-in-out;
+  }
+
+.navigation {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 100%;
+  transition: transform 0.5s ease-in;
+  transform: translateX(-100%);
+}
+
+.open {
+    transform: translateX(0);
+  }
+  .navigation .nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 268px;
+    background-color: #F2FBFF;
+  }
+  .navigation .nav-list li a {
+    padding: 12px 0;
+    color: #100E3B;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .navigation .nav-list li a:hover {
+    color: #FA4400;
+  }
+.hero{
+    width: 100%;
+    height: 500px;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    background-color: #F2FBFF;
+    display: block;
+    margin-top: 80px;
+}
+
+.container-hero{
+    width: 100%;
+    position: relative;
+    padding: 16px 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+.container-hero .text-hero{
+    z-index: 10;
+    position: relative;
+    order: 2;
+    left: 0;
+}
+.image-hero{
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+}
+.image-hero img{
+    width: 100%;
+    border-radius: 12px;
+}
+.hero h1{
+    font-size: 30px;
+    color: #100E3B;
+    font-weight: 600;
+}
+.hero p{
+    font-size: 16px;
+    color: rgba(16, 14, 59,75%);
+    margin: 10px 0 30px 0;
+    font-weight: 300;
+}
+
+
+main{
+    width: 100%;
+}
+.container-boarding-house{
+    padding: 80px 32px;
+}
+h2{
+    font-size: 24px;
+    color: #100E3B;
+    font-weight: 400;
+    text-align: center;
+}
+.list-boarding-house{
+    margin: 24px auto;
+}
+.boarding-house-item{
+    position: relative;
+    border-radius: 12px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+.boarding-house-item .img-item img{
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.location{
+    position: absolute;
+    border-radius: 12px;
+    height: 80px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,.6);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 16px;
+}
+
+h3 a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #f2f3f3;
+    font-weight: 400;
+    display: inline-block;
+    width: 100%;
+}
+h3 a:hover{
+    /* text-decoration: underline; */
+    color: #F8C500;
+}
+.location p{
+    font-size: 14px;
+    color: #f2f3f3;
+    font-weight: 300;
+}
+.rating{
+    width: 120px;
+    position: absolute;
+    border-bottom-left-radius: 24px;
+    border-top-right-radius: 12px;
+    top: 0;
+    right: 0;
+    background-color: #100E3B;
+}
+.rating p{
+    color: #F8C500;
+    text-align: center;
+    padding: 6px;
+    font-size: 15px;
+}
+.most-popular{
+    margin: 80px auto;
+    width: 100%;
+    display: block;
+    padding: 32px;
+
+}
+.most-popular h2{
+    text-align: left;
+}
+
+.most-popular-content{
+    background-color: #F2FBFF;
+    border-radius: 12px;
+    position: relative;
+    padding: 32px 24px;
+    min-height: 200px;
+    margin-top: 30px;
+}
+.img-most-popular{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.text-most-popular h2{
+    font-size: 24px;
+    margin: 10px 0;
+}
+.img-most-popular img{
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 8px;
+}
+.text-most-popular h3{
+    font-size: 28px;
+    color: #FA4400;
+    font-weight: 600;
+}
+.button-most-popular{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.btn-detail{
+    color: #100E3B;
+    background-color: #eaeaea;
+}
+
+
+footer{
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding:0 32px 0 32px;
+}
+.list-footer{
+    padding-top: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.list-footer ul{
+    min-height: 100px;
+    display: block;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+}
+.list-footer ul li a{
+    color: #8a8787;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+}
+.list-footer ul li a:hover{
+    color: #100E3B;
+    text-decoration: underline;
+}
+.copyright p{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 14px;
+    font-weight: 300;
+    color: #8a8787;
+}
+
+/* kelapa gading detail */
+ 
+.kelapa-gading{
+    margin: 80px auto 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    display: block;
+}
+.kelapa-gading h1{
+    color: #100E3B;
+}
+.image-boarding{
+    overflow: hidden;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.image-boarding img{
+    border-radius: 12px;
+    object-fit: cover;
+    width: 100%;
+}
+.outside-theHouse, .inside-theHouse{
+    margin: 10px auto;
+    width: 100%;
+    border-radius: 12px;
+}
+.detail-description{
+    padding: 32px;
+    display: grid;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.detail-description h2{
+    color: #100E3B;
+    text-align: left;
+    
+}
+.description, .facilitas{
+    border-radius: 12px;
+    padding: 32px;
+    background-color: #F2FBFF;
+}
+.description p, .facilitas ul{
+    margin-top: 10px;
+}
+
+.facilitas ul li{
+    list-style: circle;
+    margin-left: 32px;
+}
+.chat, .show-me{
+    background-color: #100E3B;
+    width: 190px;
+    border-radius: 12px;
+}
+.chat a, .hero a{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 14px;
+}
+.detail-btn{
+    background-color: #8a8787;
+    width: 190px;
+    border-radius: 12px;
+}
+.detail-btn a{
+    display: block;
+    color: #100E3B;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 14px;
+}
+/* akhir kelapa gading detail */
+
+/* about */
+.about{
+    display: grid;
+    grid-auto-rows: 100px, 1fr, 100px, 1fr;
+    text-align: center;
+    gap: 30px;
+    width: 100%;
+    margin: 100px auto 40px auto;
+    padding: 32px;
+}
+.about h1{
+font-size: 32px;
+color: #100E3B;
+}
+.about-text{
+    margin: auto;
+}
+.about-text p{
+    text-align: left;
+}
+.who-we-are{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+.who-we-are .profil{
+    width: 120px;
+}
+.who-we-are .img-profil{
+    border: 3px solid #eaeaea;
+    border-radius: 100%;
+}
+.who-we-are .profil img{
+    width: 100%;
+    padding: 2px;
+    border-radius: 100%;
+    object-fit: cover;
+    display: block;
+}
+.who-we-are h2{
+    font-size: 20px;
+}
+.who-we-are p{
+    font-size: 16px;
+    color: #8a8787;
+    font-weight: 300;
+}
+/* akhir about */
+

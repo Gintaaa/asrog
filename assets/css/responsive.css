@@ -1,0 +1,232 @@
+.list-boarding-house{
+    display: grid;
+    gap: 50px 30px;
+}
+.most-popular-content{
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 1fr, auto;
+}
+
+
+
+@media screen and (max-width:500px){
+    .button-most-popular{
+        flex-direction: column;
+        height: 100px;
+    }
+    .text-most-popular h2{
+        font-size: 20px;
+    }
+    .text-most-popular h3{
+        font-size: 24px;
+    }
+}
+@media screen and (min-width:576px){
+    
+    /* .navigation {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        transform: translateX(-100%);
+        z-index: 10;
+        transition: all .5s ease-in-out;
+        opacity: 0;
+        transform-origin: left;
+        height: 400px;
+        width: 100%;
+    }
+    .navigation .nav-list {
+        height:100%;
+        padding: 50px 0;
+        flex-direction: column;
+        background-color: rgb(16, 14, 59);
+    }
+    .navigation .nav-list li a{
+        color: #F2FBFF;
+    } */
+    
+}
+
+@media screen and (min-width:577px){
+    .menu-button {
+        display: none;
+      }
+    
+      .navigation {
+        position: relative;
+        top: 0;
+        background-color: transparent;
+        width: 400px;
+        transform: translateX(0);
+      }
+    
+      .navigation .nav-list {
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: transparent;
+      }
+    
+    .container-header{
+       min-height: 560px;
+    }
+    .list-boarding-house{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .most-popular-content{
+        min-height: 200px;
+    }
+    .detail-description{
+        grid-template-rows: repeat (2,1fr );
+    }
+    .about{
+        grid-auto-rows: 100px, 1fr, 100px;
+    }
+    .about-text{
+        width: 60%;
+    }
+    .who-we-are{
+        grid-template-columns: repeat(3, 1fr);
+        width: 60%;
+        margin: auto;
+    }
+
+    .who-we-are h2{
+        font-weight: 400;
+    }
+    
+}
+
+@media screen and (min-width: 700px) {
+    
+    .app-bar .container {
+        padding: 32px 64px;
+    }
+    .app-bar .container nav {
+        justify-content: space-between;
+    }
+   
+    .most-popular, .location-map{
+        margin: 60px 0;
+        padding: 0 64px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .location p{
+        font-size: 16px;
+    }
+    footer{
+        padding:0 64px 0 64px;
+    }
+    .list-footer{
+        flex-direction: row;
+    }
+    .list-footer ul{
+        flex-direction: row;
+        width: 400px;
+    }
+    .list-footer ul li a{
+        font-size: 16px;
+    }
+    .copyright{
+        margin: auto;
+    }
+    .copyright p{
+        font-size: 16px;
+    }
+    
+    .most-popular-content{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: unset;
+        column-gap: 80px;
+        height: 400px;
+        align-items: center;
+    }
+    .image-boarding{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: unset;
+    }
+    
+}
+@media screen and (min-width: 800px){
+    header{
+        padding: 0 32px;
+    }
+    .container-header{
+        min-height: 400px;
+    }
+    .container-hero{
+        padding: 32px 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container-hero .text-hero{
+        order: 1;
+        left: 100px;
+        position: absolute;
+    }
+    .container-header h1{
+        font-size: 40px;
+    }
+    .container-header p, .container-header button{
+        font-size: 18px;
+    }
+    .list-boarding-house{
+        padding: 0 32px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    h2{
+        font-weight: 600;
+        font-size: 26px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .most-popular{
+        padding: 32px 64px;
+    }
+    .kelapa-gading{
+        padding: 32px 64px;
+    }
+    .image-boarding{
+        display: grid;
+        grid-template-columns: repeat (2,1fr );
+        align-items: center;
+        gap: 30px;
+    }
+    .outside-theHouse, .inside-theHouse{
+        height: 100%;
+    }
+    .outside-theHouse img, .inside-theHouse img{
+        height: 100%;
+    }
+    .inside-theHouse{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .detail-description{
+        padding: 32px 64px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .detail-description h2{
+        font-weight: unset;
+    }
+}
+@media screen and (min-width: 900px) {
+    .hero{
+        height: 580px;
+    }
+    .list-boarding-house {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
