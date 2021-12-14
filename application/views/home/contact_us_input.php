@@ -49,6 +49,16 @@
             <a class="next" href="<?=  base_url('Home/contactOutput'); ?>">SEND COMMENT</a>
           </td>
         </tr>
+         <tr>
+          <td colspan="3">
+            <br><br>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" align="center">
+            <a href="https://wa.me/6285219067686?text=Nama%3A%0AEmail%3A%0AComment%3A">Chat Via WhatsApp</a>
+          </td>
+        </tr>
       </table>
       
     </form>
